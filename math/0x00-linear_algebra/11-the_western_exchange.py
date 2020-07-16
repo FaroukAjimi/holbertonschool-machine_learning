@@ -2,9 +2,6 @@
 """numpy"""
 
 
-import numpy
-
-
 def np_transpose(matrix):
     """matrix"""
     return(numpy.transpose(matrix))
