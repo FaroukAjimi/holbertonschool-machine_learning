@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""cat"""
+"""cat module"""
 
 
 def np_shape(matrix):
-    """cat shape"""
+    """cat shape matrix"""
     return(matrix.shape)
