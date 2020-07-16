@@ -6,6 +6,8 @@ def mat_mul(mat1, mat2):
     """mul mul manuallyl"""
     new = []
     fin = []
+    if len(mat1[0]) != len(mat2):
+        return(None)
     eq = len(mat2[0])
     for i in range(len(mat1)):
         new.append([])
