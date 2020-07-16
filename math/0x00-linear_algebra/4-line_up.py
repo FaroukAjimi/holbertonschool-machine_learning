@@ -5,7 +5,7 @@
 def add_arrays(arr1, arr2):
     """add"""
     new = []
-    if len(arr1) != arr2:
+    if len(arr1) != len(arr2):
         return(None)
     if arr1 == [] or arr2 == []:
         return(None)
