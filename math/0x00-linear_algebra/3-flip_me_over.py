@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+"""matrix"""
 def matrix_transpose(matrix):
+    """matrix transpose"""
     new = []
     for i in matrix[0]:
         new.append([])

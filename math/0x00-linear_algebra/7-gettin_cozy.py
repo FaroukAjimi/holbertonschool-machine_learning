@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+"""copet"""
 import copy
 def cat_matrices2D(mat1, mat2, axis=0):
+    """ cat mat"""
     new = []
     lis1 = []
     a = copy.deepcopy(mat1)

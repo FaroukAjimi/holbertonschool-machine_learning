@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+""" mat"""
 def mat_mul(mat1, mat2):
+    """mull"""
     new = []
     fin = []
     eq = len(mat2[0])

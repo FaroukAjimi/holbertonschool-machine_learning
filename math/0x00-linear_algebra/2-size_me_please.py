@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+"""task 2"""
 def matrix_shape(matrix):
+    """amatrix shape"""
     a= []
     c=[]
     t = type(a)
