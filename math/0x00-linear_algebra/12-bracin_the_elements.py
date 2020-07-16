@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""goog"""
+"""mutliple functions"""
 
 
 def np_elementwise(mat1, mat2):
-    """np ele"""
+    """add sub mul div functions"""
     return((mat1 + mat2),
            (mat1 - mat2),
            (mat1 * mat2),
