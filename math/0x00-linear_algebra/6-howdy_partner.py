@@ -3,7 +3,7 @@
 
 
 def cat_arrays(arr1, arr2):
-    """cat"""
+    """cat arr1 + arr2"""
     s = []
     for i in arr1:
         s.append(i)
