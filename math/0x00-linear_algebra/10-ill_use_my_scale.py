@@ -2,9 +2,6 @@
 """cat"""
 
 
-import numpy as np
-
-
 def np_shape(matrix):
-    """cat"""
+    """cat shape"""
     return(matrix.shape)
