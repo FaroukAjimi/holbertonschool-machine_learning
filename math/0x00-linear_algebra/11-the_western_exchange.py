@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""numpy"""
+"""numpy matrix"""
 
 
 def np_transpose(matrix):
-    """matrix"""
-    return(numpy.transpose(matrix))
+    """matrix transpose"""
+    return(matrix.T)
