@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-""" mat"""
+""" mat multiplication"""
 
 
 def mat_mul(mat1, mat2):
-    """mull"""
+    """mul mul manuallyl"""
     new = []
     fin = []
     eq = len(mat2[0])
