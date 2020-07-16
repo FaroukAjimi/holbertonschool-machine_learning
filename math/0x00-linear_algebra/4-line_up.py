@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """task 4"""
+
+
 def add_arrays(arr1, arr2):
     """add"""
     new = []

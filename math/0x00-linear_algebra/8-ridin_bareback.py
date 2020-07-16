@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """ mat"""
+
+
 def mat_mul(mat1, mat2):
     """mull"""
     new = []
@@ -15,6 +17,6 @@ def mat_mul(mat1, mat2):
                 new[x].append(mat1[x][y] * mat2[y][z])
     n = int(len(new[i]) / 2)
     for i in range(len(new)):
-        for y in range(n): 
+        for y in range(n):
             fin[i].append(new[i][y] + new[i][y + eq])
     return(fin)
