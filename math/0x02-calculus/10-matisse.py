@@ -10,8 +10,6 @@ def poly_derivative(poly):
         return(None)
     der = []
     for i in range(len(poly)):
-        if type(poly[i]) is not t1:
-            return(None)
         if i != 0:
             der.append(i * poly[i])
     if der = []:
