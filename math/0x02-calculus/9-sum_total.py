@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
+# SIgma alogrithm
 def summation_i_squared(n):
+    """ function sum_i_squared
+    from i = 1 
+    to i = n
+    while i is squared"""
     t = type(1)
     if type(n) is not t:
         return(None)
