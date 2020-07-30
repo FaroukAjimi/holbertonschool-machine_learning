@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SIgma alogrithm
+""" SIgma alogrithm"""
 
 
 def summation_i_squared(n):
