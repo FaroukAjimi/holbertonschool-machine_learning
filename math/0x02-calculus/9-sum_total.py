@@ -8,7 +8,7 @@ def summation_i_squared(n):
     to i = n
     while i is squared """
     t = type(1)
-    if type(n) is not t:
+    if type(n) is not t or n < 1:
         return(None)
     lis = [*range(1, n + 1)]
     po = list(map(lambda x: x ** 2, lis))
