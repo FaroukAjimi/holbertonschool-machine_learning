@@ -21,7 +21,7 @@ class Neuron:
     @property
     def W(self):
         """W selr"""
-        return (self._Neuron__W)
+        return (self.__W)
 
     @property
     def b(self):
