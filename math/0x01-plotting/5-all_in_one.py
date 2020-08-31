@@ -21,11 +21,10 @@ np.random.seed(5)
 student_grades = np.random.normal(68, 15, 50)
 fig, grid = plt.subplots(3,2)
 fig.suptitle("All in One")
-plt.tight_layout()
 #task0
 plt.subplot(321)
 plt.plot(y0, 'r-')
-
+plt.tight_layout(pad=2.5)
 #task1
 plt.subplot(322)
 plt.plot(x1, y1, 'm.')
