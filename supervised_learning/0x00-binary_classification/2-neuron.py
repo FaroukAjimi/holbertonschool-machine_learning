@@ -1,4 +1,4 @@
-#!/usr/bin/env python3                                                    
+#!/usr/bin/env python3
 """Supervised leaning intro"""
 
 
@@ -16,12 +16,11 @@ class Neuron:
         self.__W = (np.random.randn(1, nx))
         self.__b = 0
         self.__A = 0
-        print(dir(self))
 
     @property
     def W(self):
         """W selr"""
-        return (self._Neuron__W)
+        return (self.__W)
 
     @property
     def b(self):
@@ -31,4 +30,11 @@ class Neuron:
     @property
     def A(self):
         """yoo"""
+        return (self.__A)
+
+    def forward_prop(self, X):
+        """bin clas"""
+        nx, m = np.shape(X)
+        mul = np.matmul(self.__W, X) + self.__b
+        self.__A = 1/(1 + (np.exp(-mul)))
         return (self.__A)
