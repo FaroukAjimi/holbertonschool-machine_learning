@@ -18,6 +18,7 @@ def mat_mul(mat1, mat2):
             for z in range(len(mat2[0])):
                 new[x].append(mat1[x][y] * mat2[y][z])
     n = int(len(new[i]) / 2)
+    print(new)
     for i in range(len(new)):
         for y in range(n):
             fin[i].append(new[i][y] + new[i][y + eq])
