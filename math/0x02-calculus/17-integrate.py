@@ -5,6 +5,12 @@
 def poly_integral(poly, C=0):
     """gooog"""
     integral = [C]
+    if !(isinstance(poly, list)) or !(isinstance(C, int)):
+        return(None)
+    if len(poly) == 0 or poly == None:
+        return(None)
+    if poly == [0]:
+        return(C)
     for i in range(len(poly)):
         if i != 0:
             s = (poly[i] ** i)/(i+1)
