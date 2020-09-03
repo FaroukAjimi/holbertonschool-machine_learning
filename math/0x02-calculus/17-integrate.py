@@ -5,7 +5,7 @@
 def poly_integral(poly, C=0):
     """gooog"""
     integral = [C]
-    if !(isinstance(poly, list)) or !(isinstance(C, int)):
+    if not(isinstance(poly, list)) or not(isinstance(C, int)):
         return(None)
     if len(poly) == 0 or poly == None:
         return(None)
