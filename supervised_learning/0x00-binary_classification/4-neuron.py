@@ -40,8 +40,18 @@ class Neuron:
         return (self.__A)
 
     def cost(self, Y, A):
-        m = np.shape[1]
-        prob = np.multiply(np.log(A), Y) + np.multiply(1 - Y, np.log(1 - A))
+        """COST Function"""
+        m = Y.shape[1]
+        prob = np.multiply(np.log(A),
+                           Y) + np.multiply(1 - Y,
+                                            np.log(1.0000001 - A))
         cost = -np.sum(prob) / m
         cost = np.squeeze(cost)
         return (cost)
+
+    def evaluate(self, X, Y):
+        """dsds"""
+        fp = self.forward_prop(X)
+        fpr = np.round(fp)
+        fpri = fpr.astype(np.int)
+        return(fpri, self.cost(Y, fp))
