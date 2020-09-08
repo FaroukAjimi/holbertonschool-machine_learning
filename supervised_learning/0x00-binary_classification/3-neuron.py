@@ -42,7 +42,7 @@ class Neuron:
     def cost(self, Y, A):
         """hooo"""
         m = Y.shape[1]
-        prob = np.multiply(np.log(A), Y) + np.multiply(1 - Y, np.log(1 - A))
+        prob = np.multiply(np.log(A), Y) + np.multiply(1 - Y, np.log(1.0000001 - A))
         cost = -np.sum(prob) / m
         cost = np.squeeze(cost)
         return (cost)
