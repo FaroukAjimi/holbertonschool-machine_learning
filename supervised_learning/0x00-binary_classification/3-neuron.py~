@@ -39,5 +39,9 @@ class Neuron:
         self.__A = 1/(1 + (np.exp(-mul)))
         return (self.__A)
 
-    
-    
+    def cost(self, Y, A):
+        m = np.shape[1]
+        prob = np.multiply(np.log(A), Y) + np.multiply(1 - Y, np.log(1 - A))
+        cost = -np.sum(prob) / m
+        cost = np.squeeze(cost)
+        return (cost)
