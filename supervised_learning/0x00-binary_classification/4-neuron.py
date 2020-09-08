@@ -50,7 +50,7 @@ class Neuron:
         return (cost)
 
     def evaluate(self, X, Y):
-        """dsds"""
+        """EVALAUTE Function"""
         fp = self.forward_prop(X)
         fpr = np.round(fp)
         fpri = fpr.astype(np.int)
