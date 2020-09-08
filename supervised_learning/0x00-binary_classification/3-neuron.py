@@ -40,6 +40,7 @@ class Neuron:
         return (self.__A)
 
     def cost(self, Y, A):
+        """hooo"""
         m = Y.shape[1]
         prob = np.multiply(np.log(A), Y) + np.multiply(1 - Y, np.log(1 - A))
         cost = -np.sum(prob) / m
