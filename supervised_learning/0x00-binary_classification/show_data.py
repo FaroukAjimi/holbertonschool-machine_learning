@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 lib_train = np.load('../data/Binary_Train.npz')
 X_3D, Y = lib_train['X'], lib_train['Y']
+print(Y)
 fig = plt.figure(figsize=(10, 10))
 for i in range(100):
     fig.add_subplot(10, 10, i + 1)

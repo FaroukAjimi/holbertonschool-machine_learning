@@ -50,8 +50,18 @@ class Neuron:
         return (cost)
 
     def evaluate(self, X, Y):
-        """dsds"""
+        """EVALAUTE Function"""
         fp = self.forward_prop(X)
         fpr = np.round(fp)
         fpri = fpr.astype(np.int)
-        return(fpri ,self.cost(Y, fp))
+        return(fpri, self.cost(Y, fp))
+
+    def gradient_descent(self, X, Y, A, alpha=0.05):
+        """gradient"""
+        nx, m = np.shape(X)
+        db = np.sum((A-Y)/m)
+        dw = np.sum((A-Y)*X, axis=1)
+        print(self.__W.shape, dw.shape)
+        self.__W = self.__W - (alpha * dw)
+        self.__b = self.__b - (alpha * db)
+        return self.__W, self.__b

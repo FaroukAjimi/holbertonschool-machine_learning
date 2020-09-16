@@ -37,7 +37,4 @@ class Neuron:
         nx, m = np.shape(X)
         mul = np.matmul(self.__W, X) + self.__b
         self.__A = 1/(1 + (np.exp(-mul)))
-        return (self.__A)
-
-    
-    
+        return (self.__A)    
