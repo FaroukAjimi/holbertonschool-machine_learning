@@ -61,7 +61,6 @@ class Neuron:
         nx, m = np.shape(X)
         db = np.sum((A-Y)/m)
         dw = np.sum((A-Y)*X, axis=1)
-        print(self.__W.shape, dw.shape)
         self.__W = self.__W - (alpha * dw)
         self.__b = self.__b - (alpha * db)
         return self.__W, self.__b
