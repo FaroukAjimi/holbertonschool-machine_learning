@@ -60,7 +60,7 @@ class Neuron:
         """gradient"""
         nx, m = np.shape(X)
         db = np.sum((A-Y)/m)
-        dw = np.sum((A-Y)*X, axis=1)
+        dw = np.sum((A-Y)*X, axis=1)/m
         self.__W = self.__W - (alpha * dw)
         self.__b = self.__b - (alpha * db)
-        return self.__W, self.__b
+        return (self.__W, self.__b)
